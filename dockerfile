@@ -7,3 +7,5 @@ RUN npm build
 FROM nginx:1.21
 COPY --from=node /app/dist/template-prime /usr/share/nginx/html
 EXPOSE 80
+
+# docker build -t template-prime:v1 .
